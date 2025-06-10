@@ -42,9 +42,36 @@ main{
   height: 100%;
   flex: 1;
   background: url(images/background.jpg) center center / cover no-repeat;
+  color: #22223b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
 }
 .form-container{
   height: 100%;
   flex: 2;
+}
+.heading-container{
+  height:100px;
+  width: 90%;
+  position: absolute;
+  bottom: 60%;
+  background: rgba(255, 255, 255, 0.208);
+  backdrop-filter: blur(7px);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
 
+}
+
+.image-container p{
+  font-family: "roboto", serif;
+}
+
+.image-container a{
+  color: #22223b;
 }
