@@ -74,13 +74,17 @@ main{
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  box-shadow: 11px 6px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.43);
+  border-left: 1px solid rgba(255, 255, 255, 0.43);
+}
 
-}
-.heading-container h1{
-  font-family: "DM Serif Text", serif;
-}
 .image-container a{
   color: #22223b;
+}
+
+.image-container a:hover{
+  opacity: 0.8;
 }
 
 .form-description p{
@@ -90,6 +94,7 @@ main{
 ul{
   list-style-type: none;
   padding: 0;
+  flex: 1;
 
 }
 form{
@@ -97,11 +102,27 @@ form{
   flex-direction: column;
   width: 100%;
   gap: 20px;
+  background-color: #404069;
+  border-radius: 10px;
+  padding: 40px 60px;
+  box-shadow: 4px 4px 20px black;
+}
+.heading-container h1,
+form h2{
+  font-family: "DM Serif Text", serif;
+
+}
+form h2{
+  /* you can't use linear-gradient for text so you need to clip it */
+  background: linear-gradient(90deg, #E2C9FC, #6C5EA5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  color: transparent;
 }
 
 form section{
   display: flex;
-  gap: 50px;
 }
 
 label{
@@ -114,11 +135,30 @@ input{
   border: 1px solid gray;
   border-radius: 5px;
   margin-top: 5px;
-  margin-bottom: 10px;
-  width: 400px;
+  margin-bottom: 20px;
+  width: 70%;
   height: 40px;
 }
+input:focus{
+  outline: none;
+  box-shadow: 4px 4px 20px;
+}
 
+input:user-invalid{
+  border: red solid 1px;
+}
 button{
   width: 200px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 20px;
+}
+
+.form-container a:last-child{
+  color: white;
+}
+
+.form-container a:last-child:hover{
+  opacity: 0.6;
 }
