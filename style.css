@@ -12,6 +12,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "roboto", serif;
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -52,6 +53,7 @@ main{
 .form-container{
   height: 100%;
   flex: 2;
+  background-color: #303051;
 }
 .heading-container{
   height:100px;
@@ -67,11 +69,9 @@ main{
   font-size: 30px;
 
 }
-
-.image-container p{
-  font-family: "roboto", serif;
+.heading-container h1{
+  font-family: "DM Serif Text", serif;
 }
-
 .image-container a{
   color: #22223b;
 }
