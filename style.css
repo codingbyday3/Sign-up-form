@@ -87,3 +87,38 @@ main{
   margin-bottom: 20px;
   font-size: 1.3rem;
 }
+ul{
+  list-style-type: none;
+  padding: 0;
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+form section{
+  display: flex;
+  gap: 50px;
+}
+
+label{
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  display: block;
+}
+input{
+  appearance: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 400px;
+  height: 40px;
+}
+
+button{
+  width: 200px;
+}
