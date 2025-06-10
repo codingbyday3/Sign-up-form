@@ -54,6 +54,13 @@ main{
   height: 100%;
   flex: 2;
   background-color: #303051;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0 60px;
+  gap: 40px;
 }
 .heading-container{
   height:100px;
@@ -66,7 +73,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 2rem;
 
 }
 .heading-container h1{
@@ -74,4 +81,9 @@ main{
 }
 .image-container a{
   color: #22223b;
+}
+
+.form-description p{
+  margin-bottom: 20px;
+  font-size: 1.3rem;
 }
