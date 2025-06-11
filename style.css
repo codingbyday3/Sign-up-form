@@ -1,3 +1,15 @@
+:root{
+  --image-container-clr: #22223b;
+  --right-side-background-clr: #303051;
+  --right-side-text-clr:white;
+  --header-bg-clr:rgba(255, 255, 255, 0.208);
+  --header-border-clr:rgba(255, 255, 255, 0.43);
+  --form-bg-clr:#404069;
+  --box-shadow-clr:black;
+  --form-heading-clr:linear-gradient(90deg, #E2C9FC, #6C5EA5);
+  --invalid-input-border-clr:red;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -43,7 +55,7 @@ main{
   height: 100%;
   flex: 1;
   background: url(images/background.jpg) center center / cover no-repeat;
-  color: #22223b;
+  color: var(--image-container-clr);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,12 +65,12 @@ main{
 .form-container{
   height: 100%;
   flex: 2;
-  background-color: #303051;
+  background-color: var(--right-side-background-clr);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--right-side-text-clr);
   padding: 0 60px;
   gap: 40px;
 }
@@ -67,7 +79,7 @@ main{
   width: 90%;
   position: absolute;
   bottom: 60%;
-  background: rgba(255, 255, 255, 0.208);
+  background: var(--header-bg-clr);
   backdrop-filter: blur(7px);
   border-radius: 10px;
   display: flex;
@@ -75,12 +87,12 @@ main{
   justify-content: center;
   font-size: 2rem;
   box-shadow: 11px 6px 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.43);
-  border-left: 1px solid rgba(255, 255, 255, 0.43);
+  border-top: 1px solid var(--header-border-clr);
+  border-left: 1px solid var(--header-border-clr);
 }
 
 .image-container a{
-  color: #22223b;
+  color: var(--image-container-clr);
 }
 
 .image-container a:hover{
@@ -102,10 +114,10 @@ form{
   flex-direction: column;
   width: 100%;
   gap: 20px;
-  background-color: #404069;
+  background-color: var(--form-bg-clr);
   border-radius: 10px;
   padding: 40px 60px;
-  box-shadow: 4px 4px 20px black;
+  box-shadow: 4px 4px 20px var(--box-shadow-clr);
 }
 .heading-container h1,
 form h2{
@@ -114,7 +126,7 @@ form h2{
 }
 form h2{
   /* you can't use linear-gradient for text so you need to clip it */
-  background: linear-gradient(90deg, #E2C9FC, #6C5EA5);
+  background: var(--form-heading-clr);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text; 
@@ -145,7 +157,7 @@ input:focus{
 }
 
 input:user-invalid{
-  border: red solid 1px;
+  border: var(--invalid-input-border-clr) solid 1px;
 }
 button{
   width: 200px;
@@ -165,7 +177,7 @@ button:active{
 }
 
 .form-container a:last-child{
-  color: white;
+  color: var(--right-side-text-clr);
 }
 
 .form-container a:last-child:hover{
